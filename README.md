@@ -1,6 +1,11 @@
+# WARNING! This is unofficial fork from [herohuyongtao/deeptag-pytorch](https://github.com/herohuyongtao/deeptag-pytorch)
+
+
 Implementation of paper ***DeepTag: A General Framework for Fiducial Marker Design and Detection***.
 
 **Project page**: https://herohuyongtao.github.io/research/publications/deep-tag/.
+
+# WARNING! This is unofficial fork from [herohuyongtao/deeptag-pytorch](https://github.com/herohuyongtao/deeptag-pytorch)
 
 
 ## Overview
