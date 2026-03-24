@@ -1,6 +1,6 @@
 import math
 import numpy as np
-from numpy.lib.function_base import hamming
+from numpy import hamming
 class MarkerDict:
     def __init__(self, codebook, unit_tag_template, hamming_dist = 4, max_check_count = 5000):
 

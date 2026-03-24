@@ -410,7 +410,7 @@ def match_and_warp(kpts_cand, kpts_with_ids, max_match_dist, H = None):
     else:
         H_est1, _ = cv2.findHomography(np.float32(matched_kpts_cand), np.float32(matched_kpts))
         if H_est1 is not None:
-            H_new = np.mat(H_est1)* np.mat(H)
+            H_new = np.asmatrix(H_est1)* np.asmatrix(H)
             H_new = np.array(H_new)
         else:
             H_new = None

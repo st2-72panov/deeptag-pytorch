@@ -88,7 +88,7 @@ def get_homography_matrix(theta_init_idx, p1, p2, sx, sy, theta_angle,  h, w):
     H_m2 = [[1, 0, cx+pz],
         [0, 1, cy+pz],
         [0,0,1]]
-    He = np.mat(H_m2)*np.mat(H_rot)*np.mat(H_m1)
+    He = np.asmatrix(H_m2)*np.asmatrix(H_rot)*np.asmatrix(H_m1)
 
 
 
@@ -106,7 +106,7 @@ def get_homography_matrix(theta_init_idx, p1, p2, sx, sy, theta_angle,  h, w):
           [p1,p2,1]]
 
 
-    H_a_p =  np.mat(Ha)*np.mat(Hp) * He
+    H_a_p =  np.asmatrix(Ha)*np.asmatrix(Hp) * He
     H_a_p /= H_a_p[2,2]
 
 
@@ -146,7 +146,7 @@ def get_homography_matrix(theta_init_idx, p1, p2, sx, sy, theta_angle,  h, w):
     H_m2 = [[1, 0, cx+pz],
         [0, 1, cy+pz],
         [0,0,1]]
-    He2 = np.mat(H_m2)*np.mat(H_rot)*np.mat(H_m1)
+    He2 = np.asmatrix(H_m2)*np.asmatrix(H_rot)*np.asmatrix(H_m1)
 
     # combine
     H = He2 * H_a_p
@@ -166,7 +166,7 @@ def get_homography_matrix(theta_init_idx, p1, p2, sx, sy, theta_angle,  h, w):
         [0, 1, -y_min+1],
         [0,0,1]]
 
-    H = np.mat(H_c)*H
+    H = np.asmatrix(H_c)*H
     
 
 
