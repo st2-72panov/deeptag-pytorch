@@ -15,7 +15,8 @@ if __name__ == "__main__":
 
 
     config_filename = args.config
-    device = 'cpu' if args.CPU else None
+    # device = 'cpu' if args.CPU else None
+    device = 'cpu'
 
     # load config
     load_config_flag = False
